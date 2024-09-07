@@ -1,0 +1,265 @@
+/* Student ID 201691778, Reem Almutairi */
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Dark background for overall page */
+  color: #fff; /* Light grey for general text */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 150%;
+}
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  flex-direction: column;
+} 
+/* Header styling */
+header {
+  background-color: #465e74;
+  color: #fdfdff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; 
+  position: relative;
+  line-height: 200%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #9b9c9e; 
+}
+section {
+  background-color: #232323;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+  flex: 1;
+}
+.main-content {
+  min-height: calc(100% - 120px);
+}
+/* Main content styling */
+main {
+  padding: 20px; /* Padding around main content */
+}
+/* Video Container styles */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+/* full-size iframe styles for videos */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.heading-button {
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Hover effect */
+.heading-button:hover {
+  color: #777777;
+}
+/* Active/click effect */
+.heading-button:active {
+  color: #000;
+}
+#References {
+  text-align: left;
+}
+/* form styling */
+form {
+  max-width: 800px;
+  margin: 20px auto; 
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+form input[type="email"] {
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; 
+}
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4873a2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button[type="submit"]:hover {
+  background-color: #7e97b2; 
+}
+label {
+  color: #070707;
+  display: block; 
+  margin-bottom: 5px; 
+}
+.question-title {
+  color: #070707;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #465e74;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover, .btn:focus {
+  text-decoration: none;
+  opacity: 0.9;
+  background-color: #657e96;
+}
+.carousel-container {
+  max-width: 100%; /* to limits the maximum width of the carousel */
+  margin: auto; 
+  overflow: hidden; /* to ensure nothing extends outside the carousel */
+}
+/* Carousel item images */
+.carousel-item img {
+  width: 100%; 
+  object-fit: contain;
+  height: 450px; 
+}
+/* Controls to make them visible and appropriately positioned */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* black background for visibility */
+  border-radius: 50%; /* circular shape */
+  padding: 1px; 
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* control width to avoid taking up too much space */
+}
+/* Thankyou.html page styles */
+.thank-you-message {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  color: #fff;
+  background-color: #333; 
+}
+.thank-you-message h1, .thank-you-message h2 {
+  color: #fff;
+  margin-bottom: 20px; 
+}
+.thank-you-message h1 {
+  font-size: 2.5em;
+}
+.thank-you-message h2 {
+  font-size: 2em;
+  margin-top: 40px; /* Increased space above h2 for separation */
+}
+.thank-you-message p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 30px; 
+}
+.thank-you-message ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Adds space above the list */
+}
+.thank-you-message li {
+  margin-bottom: 20px; 
+  border-radius: 5px;
+  overflow: hidden; /* to ensure the (border-radius) applies to child elements */
+}
+.thank-you-message li a {
+  display: block;
+  background-color: #465e74; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+.thank-you-message li a:hover {
+  background-color: #6885a1; /* Hover color change */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* adds shadow effect for better visibility on hover */
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-gallery {
+  position: relative;
+  display: block;
+  width: 100%; /* to ensure the gallery utilizes the full width of the wrapper */
+  text-align: center;
+  margin: 20px 0;
+}
+#currentImage {
+  width: 100%; 
+  max-width: 800px; 
+  height: auto; /* Adjusts height automatically to maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px; 
+  display: block; /* Ensures it takes up the entire line */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.content {
+  display: none;
+}
+/*table styling*/
+.table th {
+  background-color:#465e74;
+  color: #ccc;
+}
+.table td {
+  background-color: #bebdc8;
+  color:#000
+}
